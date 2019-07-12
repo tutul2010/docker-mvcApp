@@ -9,6 +9,10 @@ namespace WebApplication6
     [Table("Customer")]
     public partial class Customer
     {
+        public Customer()
+        {
+            this.Order = new List<Order>();
+        }
         public int Id { get; set; }
 
         [Required]

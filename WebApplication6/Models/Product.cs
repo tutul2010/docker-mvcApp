@@ -10,6 +10,10 @@ namespace WebApplication6.Models
     [Table("Product")]
     public partial class Product
     {
+        public Product()
+        {
+            this.Order = new List<Order>();
+        }
         public int Id { get; set; }
         [Required]
         [StringLength(150)]
