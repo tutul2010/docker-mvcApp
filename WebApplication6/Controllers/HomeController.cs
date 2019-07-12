@@ -10,7 +10,8 @@ namespace WebApplication6.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Your application index page.";
+            ViewBag.Message = "Customer Information page.";
+
             return View();
         }
 
